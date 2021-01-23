@@ -1,0 +1,71 @@
+body {
+    background-image: linear-gradient(140deg, #fdceff, #a3daff);
+    background-attachment: fixed;
+}
+
+h1 {
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+    padding-left: 30%;
+    padding-right: 30%;
+}
+
+button {
+    position: relative;
+    font-size: 28px;
+    padding: 14px;
+    background-color: #b195ff88;
+    color: white;
+    border: none;
+    border-radius: 0.8rem;
+    font-weight: bold;
+    width: 200px;
+    transition-duration: 0.4s;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+button:after {
+    content: '';
+    background: #f1f1f1;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s;
+}
+
+button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s;
+    border-radius: 0.3rem;
+}
+
+#binary {
+    text-align: center;
+    font-size: 16px;
+    border: none;
+    border-radius: 0.3rem;
+    width: 45%;
+    height: 30px;
+}
+
+.block {
+    background-color: #00000020;
+    padding-top: 0.1%;
+    padding-bottom: 1%;
+    border-radius: 0.3rem;
+}
+
+.text {
+    font-weight: bold;
+    font-size: 18px;
+}

@@ -1,32 +1,31 @@
 <!DOCTYPE html>
 
 <html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="styles.css" rel="stylesheet">
-    <script src="convert.js"></script>
-    <title>Bin2Dec</title>
-</head>
-<body>
-    <h1>Bin2Dec</h1>
-    <div class="convert">
-        <form name="form" onsubmit="convert();return false">
-            <ul>
-                <li>
-                    <label>Insert the binary code:</label>
-                    <input type="text" name="binary" placeholder="Only binary digits">
-                    <input type="submit" name="submit" value="Convert">
-                </li>
-            </br>
-                <li class="rq">*Required Field</li>
-            </br>
-                <li>
-                    <label>Your binary code </br>converted to decimal is:</label>
-                    <label id="decText" name="decText"></label>
-                </li>
-            </ul>
-        </form>
-    </div>
-</body>
+    <head>
+        <meta charset='UTF-8'>
+        
+        <link href='style.css' rel='stylesheet'>
+        <script src='script.js'></script>
+
+        <title>Bin2Dec</title>
+    </head>
+    <body>
+        <h1>Bin2Dec</h1>
+        <div class='center'>
+            <div class='block'>
+                <h2>Insert a binary code</h2>
+
+                <form onsubmit='convert(); return false;'>
+                    <input type='text' id='binary' placeholder='Only binary digits' maxlength='8' required>
+
+                    </br></br>
+
+                    <button>Convert</button>
+                </form>
+
+                <p class='text'>Converted to decimal:</p>
+                <p id='decimal'>&lt;decimal&gt;</p>
+            </div>
+        </div>
+    </body>
 </html>
